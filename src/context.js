@@ -35,11 +35,9 @@ export default function AppProvider({ children }) {
   };
 
   useEffect(() => {
-    window.addEventListener("load", pageLoaded);
-
-    return () => {
-      window.removeEventListener("load", pageLoaded);
-    };
+    setTimeout(() => {
+      pageLoaded();
+    }, 700);
   }, []);
 
   useEffect(() => {
