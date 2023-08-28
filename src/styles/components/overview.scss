@@ -1,0 +1,98 @@
+@use "../util" as *;
+
+section.overview {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .bg-shape {
+    transform: rotate(180deg);
+    filter: var(--filter-1);
+    width: 100%;
+    max-width: 1125px;
+    position: absolute;
+    top: -38px;
+    right: 0;
+    z-index: -1;
+  }
+  h3 {
+    font-size: $text-normal;
+    color: var(--text-1);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: $text-sm;
+    color: var(--text-2);
+    font-weight: 300;
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 14px;
+  }
+  .icon {
+    width: 69px;
+    height: 69px;
+    padding: 15px;
+    background: var(--bg-4);
+    border-radius: $radius-md;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+
+  .wrapper-classes {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    article {
+      flex: 1;
+      &:last-of-type .icon img {
+        filter: var(--filter-3);
+      }
+    }
+  }
+  .wrapper-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 0 50px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: $bp-992) {
+  section.overview {
+    .wrapper-classes {
+      flex-direction: column;
+      gap: 80px;
+    }
+  }
+}
+
+@media (max-width: $bp-600) {
+  section.overview {
+    .wrapper-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      margin-top: 20px;
+    }
+    .icon {
+      width: 55px;
+      height: 55px;
+      padding: 12px;
+      border-radius: $radius-rg;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

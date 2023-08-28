@@ -1,0 +1,50 @@
+@use "../util" as *;
+
+.banner {
+    margin-top: 60px;
+    text-align: center;
+    h1 {
+        font-family: $fontMontez;
+        font-size: $text-banner;
+        font-weight: 300;
+        color: var(--text-4);
+        text-align: center;
+        line-height: 1.1em;
+        margin-top: 73px;
+    }
+    p {
+        font-size: $text-normal;
+        font-weight: 300;
+        color: var(--text-4);
+        margin-top: 33px;
+        margin-bottom: 53px;
+    }
+    .resume-button {
+        font-size: $text-sm;
+        color: var(--text-5);
+        background: var(--accent-1);
+        padding: 10px 19px;
+        border-radius: $rounded;
+        position: relative;
+        overflow: hidden;
+        &:hover {
+            .bg-div {
+                transform: translateX(0);
+            }
+        }
+        .bg-div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: var(--accent-2);
+            border-radius: $rounded;
+            transform: translateX(-100%);
+            transition: 0.3s ease;
+        }
+        .text {
+            z-index: 1;
+        }
+    }
+}

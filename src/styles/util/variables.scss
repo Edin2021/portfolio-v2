@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montez&family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap");
+
+// breakpoints (max-width)
+$bp-1150: 1150px;
+$bp-992: 992px;
+$bp-768: 768px;
+$bp-600: 600px;
+
+// fonts
+$fontMontez: "Montez", cursive;
+$fontMontserrat: "Montserrat Alternates", sans-serif;
+
+// font sizes
+$text-4xs: 9px;
+$text-3xs: 10px;
+$text-2xs: 11px;
+$text-xs: 12px;
+$text-sm: 14px;
+$text-rg: 16px;
+$text-normal: 18px;
+$text-md: 20px;
+$text-lg: 24px;
+$text-banner: 100px;
+
+// other variables
+$container: clamp(200px, 90%, 1200px);
+$radius-sm: 15px;
+$radius-rg: 20px;
+$radius-md: 25px;
+$radius-lg: 2rem;
+$radius-xl: 2.5rem;
+$rounded: 1000rem;
+$radius-mobile-menu: 180px;
+
+// colors
+
+// light
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-1);
+
+  --bg-1: #ffffff;
+  --bg-2: #fff9f9;
+  --bg-3: #ffb6b6;
+  --bg-4: #f3f3f3;
+  --bg-5: #d9d9d9;
+  --text-1: #415468;
+  --text-2: #686868;
+  --text-3: #787878;
+  --text-4: #102a42;
+  --text-5: #ffffff;
+  --accent-1: #ff0181;
+  --accent-2: #ffb6b6;
+  --danger: #ff7d7d;
+  --success: #70d1ad;
+  --shadow-1: #e4e4e4;
+  --bg-gradient-1: #ffffff;
+  --bg-gradient-2: #ece9e6;
+
+  --filter-1: invert(86%) sepia(13%) saturate(542%) hue-rotate(312deg)
+    brightness(110%) contrast(114%); // #FFF9F9
+  --filter-2: invert(100%) sepia(0%) saturate(7345%) hue-rotate(182deg)
+    brightness(111%) contrast(95%); // #F9F9F9
+}
+
+// dark theme
+html.dark {
+  --bg-1: #001a2c;
+  --bg-2: #061f30;
+  --bg-3: #c55f5f;
+  --bg-4: #072637;
+  --bg-5: #0c2d40;
+  --text-1: #e7f5ff;
+  --text-2: #c4d2dc;
+  --text-3: #ffffff;
+  --text-4: #e7f5ff;
+  --text-5: #061240;
+  --accent-1: #21e4ff;
+  --accent-2: #3dadff;
+  --danger: #ff9090;
+  --success: #78ddb8;
+  --shadow-1: #022b49;
+  --bg-gradient-1: #001a2c;
+  --bg-gradient-2: #0a0a23;
+
+  --filter-1: invert(6%) sepia(54%) saturate(4190%) hue-rotate(190deg)
+    brightness(89%) contrast(99%); // #061F30
+  --filter-2: brightness(0) saturate(100%) invert(6%) sepia(32%) saturate(3755%)
+    hue-rotate(205deg) brightness(91%) contrast(95%); // #0C172E
+  --filter-3: brightness(0) saturate(100%) invert(92%) sepia(11%) saturate(264%)
+    hue-rotate(165deg) brightness(88%) contrast(95%); // #C4D2DC
+}

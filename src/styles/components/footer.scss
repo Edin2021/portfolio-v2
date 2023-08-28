@@ -1,0 +1,24 @@
+@use "../util" as *;
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 150px;
+    .footer-center {
+        width: $container;
+    }
+    .title {
+        text-align: center;
+        font-size: $text-banner;
+        font-family: $fontMontez;
+        color: var(--text-4);
+    }
+}
+
+@media (max-width: $bp-768) {
+    footer {
+        margin-top: 100px;
+    }
+}

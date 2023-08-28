@@ -1,0 +1,64 @@
+@use "variables" as *;
+
+@mixin transition($type) {
+  transition: $type 0.3s ease;
+}
+
+@mixin separator($w, $h, $clr) {
+  width: $w;
+  height: $h;
+  background-color: $clr;
+  border-radius: $rounded;
+}
+
+@mixin underlineBase($h, $tX, $opacity, $bg, $bottom: 0) {
+  @media (min-width: $bp-768) {
+    content: "";
+    position: absolute;
+    border-radius: 1rem;
+    transition: all 0.4s ease;
+    width: 100%;
+    bottom: $bottom;
+    background-color: var($bg);
+    height: $h;
+    transform: translateX($tX);
+    opacity: $opacity;
+  }
+}
+
+@mixin underline(
+  $width,
+  $tBefore,
+  $tAfter,
+  $clrBefore,
+  $clrAfter,
+  $btm: 0
+) {
+  &::before {
+    $opacity: 0.5;
+    @include underlineBase($width, $tBefore, $opacity, $clrBefore, $btm);
+  }
+  &::after {
+    $opacity: 0.1;
+    @include underlineBase($width, $tAfter, $opacity, $clrAfter, $btm);
+  }
+  &:hover {
+    &::after {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    &::before {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

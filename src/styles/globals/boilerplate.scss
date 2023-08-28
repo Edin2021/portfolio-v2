@@ -1,0 +1,113 @@
+@use "../util" as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fontMontserrat;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: $container;
+  gap: 100px;
+  position: relative;
+}
+
+// @media (max-width: $bp-768) {
+//   main {
+//     overflow: hidden;
+//   }
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  line-height: 100%;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  display: inline-flex;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+}
+
+button,
+a {
+  transition: all 0.3s ease;
+}
+
+span {
+  display: inline-flex;
+}
+
+// accessibility for icons
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+}
+
+main > section,
+footer section {
+  & > h2 {
+    font-size: $text-lg;
+    font-weight: 400;
+    color: var(--text-1);
+    margin-bottom: 15px;
+    text-align: center;
+
+    position: relative;
+    span {
+      position: absolute;
+      top: -5rem;
+    }
+  }
+  & > .separator {
+    @include separator(43px, 4px, var(--bg-3));
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+header, main, footer {
+  animation: fadeIn 0.3s ease forwards;
+}

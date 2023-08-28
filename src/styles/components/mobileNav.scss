@@ -1,0 +1,77 @@
+@use "../util" as *;
+
+.mobile-nav-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(1px);
+  display: none;
+}
+
+.mobile-nav {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 500px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  background: var(--bg-4);
+  border-bottom-left-radius: $radius-mobile-menu;
+  z-index: 6;
+  transform: translate(100%, -100%);
+  transition: all 0.3s ease;
+  .github {
+    padding: 20px 50px;
+    img {
+      width: 35px;
+      margin-top: 9px;
+      filter: var(--filter-3);
+    }
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+      padding: 20px 50px;
+    }
+  }
+}
+
+.toggle-mobile-menu {
+  display: none;
+  position: fixed;
+  padding: 8px;
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+  img {
+    margin-top: 8px;
+    filter: var(--filter-3);
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-nav {
+    justify-content: center;
+    &.active {
+        transform: translate(0, 0);
+    }
+  }
+  .mobile-nav-bg {
+    display: block;
+  }
+  .toggle-mobile-menu {
+    display: block;
+  }
+}

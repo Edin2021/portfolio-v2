@@ -1,0 +1,13 @@
+@use "../util" as *;
+
+nav {
+    color: var(--text-1);
+  a {
+    font-size: $text-sm;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    position: relative;
+    overflow: hidden;
+    @include underline(1px, 101%, -101%, --accent-1, --text-2);
+  }
+}
