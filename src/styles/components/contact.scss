@@ -4,7 +4,8 @@ section.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 0;
+  padding: 100px 0;
+  position: relative;
   .wrapper-classes {
     display: flex;
     align-content: center;
@@ -15,25 +16,46 @@ section.contact {
       justify-content: center;
       align-items: center;
     }
-  }
-  button,
-  a {
-    background: var(--bg-4);
-    width: 60px;
-    padding: 15px;
-    border-radius: $rounded;
-  }
-  button {
-    cursor: copy;
-    &.success {
-      outline: 2px solid var(--success);
+    button,
+    a {
+      background: var(--bg-4);
+      width: 60px;
+      padding: 15px;
+      border-radius: $rounded;
     }
-    &.error {
-      outline: 2px solid var(--danger);
+    button {
+      cursor: copy;
+      &.success {
+        outline: 2px solid var(--success);
+      }
+      &.error {
+        outline: 2px solid var(--danger);
+      }
+    }
+    img {
+      width: 100%;
+      filter: var(--filter-3);
     }
   }
-  img {
-    width: 100%;
-    filter: var(--filter-3);
+
+  .old-portfolio {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    .text {
+      display: flex;
+      position: relative;
+      overflow: hidden;
+      @include underline(1px, 101%, -101%, --accent-1, --text-2);
+      color: var(--text-2);
+      font-size: $text-sm;
+    }
+    img {
+      filter: var(--filter-3);
+      width: 10px;
+      position: absolute;
+      right: -2px;
+      transform: translateX(100%);
+    }
   }
 }

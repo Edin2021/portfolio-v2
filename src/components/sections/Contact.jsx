@@ -2,15 +2,6 @@ import { contact } from "../../assets/data/contact";
 import { loadIcon } from "../../composables/iconLoader";
 
 function Contact() {
-  // function copyToClipboard(text) {
-  //   const textarea = document.createElement('textarea');
-  //   textarea.value = text;
-  //   document.body.appendChild(textarea);
-  //   textarea.select();
-  //   document.execCommand('copy');
-  //   document.body.removeChild(textarea);
-  // }
-
   const copyToClipboard = async (e) => {
     const currEl =
       e.target.tagName.toUpperCase() !== "BUTTON"
@@ -49,6 +40,15 @@ function Contact() {
           <img src={loadIcon[contact.linkedin.name]} alt="" />
         </a>
       </div>
+      <a
+        href="https://edinsikira.pages.dev/"
+        target="_blank"
+        rel="noreferrer"
+        className="old-portfolio"
+      >
+        <div className="text"> Old Revision</div>{" "}
+        <img src={loadIcon["flag"]} alt="" />
+      </a>
     </section>
   );
 }

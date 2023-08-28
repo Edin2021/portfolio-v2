@@ -1,0 +1,17 @@
+@use "../util" as *;
+
+.error {
+    text-align: center;
+    h1 {
+        font-size: $text-rg;
+        margin-bottom: 10px;
+        color: var(--text-4);
+        font-weight: 400;
+    }
+    a {
+        position: relative;
+        overflow: hidden;
+        @include underline(1px, 101%, -101%, --accent-1, --text-2);
+        color: var(--text-2);
+    }
+}

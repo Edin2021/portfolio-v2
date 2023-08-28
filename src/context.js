@@ -35,12 +35,13 @@ export default function AppProvider({ children }) {
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      pageLoaded();
-    }, 750);
+    window.addEventListener("load", pageLoaded);
+
+    return () => {
+      window.removeEventListener("load", pageLoaded);
+    };
   }, []);
 
-  // Get elements and set magnet effect
   useEffect(() => {
     const magnets = document.querySelectorAll(".magnet");
     magnets.forEach((magnetElement) => {
