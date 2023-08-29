@@ -25,9 +25,9 @@ function Overview() {
             ))}
             <div className="wrapper-icons">
               {article.icons.map((icon) => (
-                <button className="icon" key={icon}>
+                <div className="icon" key={icon}>
                   <img src={loadIcon[handleIcon(icon)]} alt={icon} />
-                </button>
+                </div>
               ))}
             </div>
           </article>
