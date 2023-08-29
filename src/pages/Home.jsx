@@ -5,6 +5,7 @@ import Overview from "../components/sections/Overview";
 import Projects from "../components/sections/Projects";
 import Experience from "../components/sections/Experience";
 import MobileMenu from "../components/layout/MobileMenu";
+import Loader from "../components/utilities/Loader";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
         <Experience />
       </main>
       <Footer />
+      <Loader />
     </>
   );
 }

@@ -35,12 +35,6 @@ export default function AppProvider({ children }) {
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      pageLoaded();
-    }, 700);
-  }, []);
-
-  useEffect(() => {
     const magnets = document.querySelectorAll(".magnet");
     magnets.forEach((magnetElement) => {
       if (!magnetElement) return;
@@ -49,9 +43,7 @@ export default function AppProvider({ children }) {
       magnetElement.addEventListener("mousemove", (e) => magnet(e, xMp, yMp));
       magnetElement.addEventListener("mouseout", magnetUnset);
     });
-  }, [loading]);
-
-  if (loading) return <Loader />;
+  }, []);
 
   return (
     <AppContext.Provider
