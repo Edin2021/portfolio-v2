@@ -18,6 +18,9 @@ import pentagon from "../assets/images/icons/pentagon.svg";
 import hexagon from "../assets/images/icons/hexagon.svg";
 import dot from "../assets/images/icons/dot.svg";
 import flag from "../assets/images/icons/flag.svg";
+import toolBox from "../assets/images/icons/tool-box.svg";
+import toolKit1 from "../assets/images/icons/tool-kit-1.svg";
+import toolKit2 from "../assets/images/icons/tool-kit-2.svg";
 
 import html from "../assets/images/logos/html.svg";
 import css from "../assets/images/logos/css.svg";
@@ -31,6 +34,10 @@ import git from "../assets/images/logos/git.svg";
 import gitLight from "../assets/images/logos/git-light.svg";
 import api from "../assets/images/logos/api.svg";
 import firebase from "../assets/images/logos/firebase.svg";
+import storybook from "../assets/images/logos/storybook.svg";
+import storybookLight from "../assets/images/logos/storybook-light.svg";
+import storyblok from "../assets/images/logos/storyblok.svg";
+import storyblokLight from "../assets/images/logos/storyblok-light.svg";
 
 export const loadIcon = {
   github,
@@ -64,5 +71,12 @@ export const loadIcon = {
   pentagon,
   hexagon,
   dot,
-  flag
+  flag,
+  storybook,
+  storybookLight,
+  storyblok,
+  storyblokLight,
+  toolBox,
+  toolKit1,
+  toolKit2,
 };

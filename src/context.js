@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Loader from "./components/utilities/Loader";
 import { magnet, magnetUnset } from "./helpers/utils";
 
 const AppContext = React.createContext();
@@ -9,7 +8,6 @@ export default function AppProvider({ children }) {
 
   const [theme, setTheme] = useState(localTheme);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const htmlTag = document.getElementsByTagName("html")[0];
@@ -29,10 +27,6 @@ export default function AppProvider({ children }) {
   };
 
   const toggleMobileMenu = () => setShowMobileMenu((prevState) => !prevState);
-
-  const pageLoaded = () => {
-    setLoading(false);
-  };
 
   useEffect(() => {
     const magnets = document.querySelectorAll(".magnet");

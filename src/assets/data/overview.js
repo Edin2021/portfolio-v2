@@ -13,6 +13,8 @@ const overview = [
       "vue",
       "git gitLight",
       "tailwind tailwindLight",
+      "storybook storybookLight",
+      "storyblok storyblokLight"
     ],
   },
   {

@@ -4,7 +4,7 @@ function Banner() {
   return (
     <section className="banner">
       <h1>
-        Hi, I’m <br /> Edin <br /> Sikira
+        Hi, I’m  Edin  Sikira
       </h1>
       <p>A front-end developer based in Bosnia and Herzegovina</p>
       <a

@@ -9,4 +9,11 @@ const magnetUnset = (e) => {
     e.currentTarget.style.transform = `translate(0px,0px )`;
   };
 
-export { magnet, magnetUnset };
+  const iconModeSwitcher = (icon, theme) => {
+    const icons = icon.split(" ");
+    const currIcon =
+      icons.length > 1 ? (theme ? icons[1] : icons[0]) : icons[0];
+    return currIcon;
+  };
+
+export { magnet, magnetUnset, iconModeSwitcher };

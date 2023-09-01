@@ -11,6 +11,9 @@
         text-align: center;
         line-height: 1.1em;
         margin-top: 73px;
+        width: 250px;
+        max-width: 250px;
+        display: inline-block;
     }
     p {
         font-size: $text-normal;

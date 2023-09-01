@@ -27,7 +27,7 @@ $container: clamp(200px, 90%, 1200px);
 $radius-sm: 15px;
 $radius-rg: 20px;
 $radius-md: 25px;
-$radius-lg: 2rem;
+$radius-lg: 40px;
 $radius-xl: 2.5rem;
 $rounded: 1000rem;
 $radius-mobile-menu: 180px;
@@ -53,14 +53,14 @@ html {
   --accent-2: #ffb6b6;
   --danger: #ff7d7d;
   --success: #70d1ad;
-  --shadow-1: #e4e4e4;
+  --shadow-1: #c4d2dc;
   --bg-gradient-1: #ffffff;
   --bg-gradient-2: #ece9e6;
 
-  --filter-1: invert(86%) sepia(13%) saturate(542%) hue-rotate(312deg)
-    brightness(110%) contrast(114%); // #FFF9F9
-  --filter-2: invert(100%) sepia(0%) saturate(7345%) hue-rotate(182deg)
-    brightness(111%) contrast(95%); // #F9F9F9
+  --filter-1: brightness(0) saturate(100%) invert(86%) sepia(13%) saturate(542%)
+    hue-rotate(312deg) brightness(110%) contrast(114%); // #FFF9F9
+  --filter-2: brightness(0) saturate(100%) invert(100%) sepia(0%)
+    saturate(7345%) hue-rotate(182deg) brightness(111%) contrast(95%); // #F9F9F9
 }
 
 // dark theme
@@ -83,10 +83,12 @@ html.dark {
   --bg-gradient-1: #001a2c;
   --bg-gradient-2: #0a0a23;
 
-  --filter-1: invert(6%) sepia(54%) saturate(4190%) hue-rotate(190deg)
-    brightness(89%) contrast(99%); // #061F30
+  --filter-1: brightness(0) saturate(100%) invert(6%) sepia(54%) saturate(4190%)
+    hue-rotate(190deg) brightness(89%) contrast(99%); // #061F30
   --filter-2: brightness(0) saturate(100%) invert(6%) sepia(32%) saturate(3755%)
     hue-rotate(205deg) brightness(91%) contrast(95%); // #0C172E
   --filter-3: brightness(0) saturate(100%) invert(92%) sepia(11%) saturate(264%)
     hue-rotate(165deg) brightness(88%) contrast(95%); // #C4D2DC
+    --filter-4: brightness(0) saturate(100%) invert(6%) sepia(54%) saturate(4190%)
+    hue-rotate(190deg) brightness(89%) contrast(99%); // #061F30
 }
