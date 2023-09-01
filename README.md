@@ -1,5 +1,5 @@
 # Personal Portoflio
 
-This serves as my personal portfolio project, meticulously designed to showcase a curated selection of my past accomplishments, as well as a testament to my evolving skill set in the dynamic field I'm passionate about. I'm unwaveringly committed to continuous learning and growth in this career path, always seeking new challenges and opportunities to expand my expertise.
+This is my personal portfolio project, where I proudly display my past projects and the skills I've acquired in my journey so far. I'm always eager to learn and grow in this field.
 
 ## [Portfolio Link](https://edinsikira.com/)
