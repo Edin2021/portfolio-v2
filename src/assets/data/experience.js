@@ -62,7 +62,7 @@ const experience = [
       {
         person: "Amer Sikira",
         role: "CEO of Generazia",
-        text: "Edin is an enthusiastic and dedicated Front End Developer who stood out with his ability to grasp concepts quickly and work independently on projects. He consistently delivered his work on time. Brought energy to the small tech company where he interned. However due, to prospects for advancement and salary restrictions it was mutually decided that it would be best for him to seek opportunities. He left a lasting and favourable impression, as an exceptional employee. ",
+        text: "Edin, a dedicated developer, excelled in grasping concepts, working independently, and meeting deadlines. His energy positively impacted the small tech company. Due to limited advancement opportunities and salary constraints, he decided to seek new opportunities, leaving a lasting, exceptional impression.",
         linkedIn: "https://www.linkedin.com/in/amer-sikira/",
       },
     ],
