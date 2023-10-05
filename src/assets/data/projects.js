@@ -1,6 +1,5 @@
 import audiophile from "../images/project/audiophile.png";
 import superchat from "../images/project/superchat.png";
-import trillowRealEstate from "../images/project/trillow.png";
 import digitalDesign from "../images/project/digital-design.png";
 import weatherApp from "../images/project/weather-app.png";
 
@@ -32,21 +31,8 @@ const projects = [
     repo: "https://github.com/Edin2021/superchat",
     demo: "https://superchat.pages.dev/chat",
   },
-  // {
-  //   id: "3",
-  //   image: trillowRealEstate,
-  //   technologies: ["sass", "javascript", "react", "api"],
-  //   title: "Trillow real estate",
-  //   description: [
-  //     "Trillow introduced me to a unique set of challenges and problems facing an unreliable API. To overcome its obstacles, I had to make many assumptions as well as double and triple-checking when it comes to the properties provided to make sure the user receives adequate data.",
-  //     "Trillow is a US-based real estate website, where users can search for homes, rentals and properties, with a variety of different filters, and sort functionality. Availability depended, the user will get 50 results per page with pagination. Listings can be viewed individually where users can see pictures and details about the listing.",
-  //   ],
-  //   accomplishments: "Robust API Integration, Data Assurance Mechanism, Enhanced User Experience, Pagination and Results Handling, Detailed Listing Presentation",
-  //   repo: "https://github.com/Edin2021/trillow-real-estate",
-  //   demo: "https://trillow-real-estate.pages.dev/",
-  // },
   {
-    id: "4",
+    id: "3",
     image: digitalDesign,
     technologies: ["sass", "javascript", "react"],
     title: "Digital design",
@@ -59,7 +45,7 @@ const projects = [
     demo: "https://digital-design.pages.dev/",
   },
   {
-    id: "5",
+    id: "4",
     image: weatherApp,
     technologies: ["sass", "javascript", "react", "api"],
     title: "Weather app",
