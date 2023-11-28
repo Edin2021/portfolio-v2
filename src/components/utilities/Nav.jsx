@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { navigation } from "../../assets/data/navigation";

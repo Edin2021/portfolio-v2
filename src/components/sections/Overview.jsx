@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import { overview } from "../../assets/data/overview";
 import { loadIcon } from "../../composables/iconLoader";
