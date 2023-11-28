@@ -42,5 +42,10 @@
   },
   "devDependencies": {
     "sass": "^1.42.1"
+  },
+  "overrides": {
+    "mini-create-react-context": {
+      "react": "^18.0.0"
+    }
   }
 }
