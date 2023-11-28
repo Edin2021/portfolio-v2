@@ -41,7 +41,7 @@ function Contact() {
         </a>
       </div>
       <a
-        href="https://edinsikira.pages.dev/"
+        href="https://edinsikirav1.pages.dev/"
         target="_blank"
         rel="noreferrer"
         className="old-portfolio"
